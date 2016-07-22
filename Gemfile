@@ -5,5 +5,5 @@ versions = JSON.parse(open('https://pages.github.com/versions.json').read)
 gem 'github-pages', versions['github-pages'], group: :jekyll_plugins
 gem 'sequel'
 gem 'unidecode'
-gem 'mysql2'
-gem 'mysql'
+#gem 'mysql2'
+#gem 'mysql'
