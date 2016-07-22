@@ -6,7 +6,7 @@ permalink: /about/
 
 **What are we?**
 
-The best way (we think) to meet likeminded people, validate an idea, and help each other make our ideas happen. There is a huge range of ideas discussed including business ventures, community garden projects, self improvement, and consciousness state sleep tracking with microprocessors.
+The best way (we think) to meet likeminded people, validate an idea, and help each other make our ideas happen. There is a huge range of ideas discussed including business ventures, community projects, and self improvement ideas.
 
 **How?**
 
