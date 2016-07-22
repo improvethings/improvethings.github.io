@@ -1,0 +1,17 @@
+---
+layout: page
+title: About
+permalink: /about/
+---
+
+**What are we?**
+
+The best way (we think) to meet likeminded people, validate an idea, and help each other make our ideas happen. There is a huge range of ideas discussed including business ventures, community garden projects, self improvement, and consciousness state sleep tracking with microprocessors.
+
+**How?**
+
+We start with everyone introducing themselves + the idea they would like to discuss (don’t worry, coming with an idea isn’t mandatory). The ideas mentioned form our agenda for the night and we work our way through all of them!
+
+**Who?**
+
+All you need to show up is curiosity, the best part about ideas meetings is the diversity. We have graphic designers, engineers, chefs, entrepreneurs, VC’s, and developers attend. Have a face? We want to see you there!
