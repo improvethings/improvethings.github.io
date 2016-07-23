@@ -17,4 +17,4 @@ All you need to show up is curiosity, the best part about ideas meetings is the 
 
 We welcome diversity, in terms of gender, ethnicity, and socio-economic status -- everyone is welcome, specifically you.
 
-New to Vancouver? We're a great place to meet likeminded innovative people!
+![ideas meeting](images/teammeetup.jpg) 
