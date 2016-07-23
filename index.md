@@ -14,3 +14,7 @@ We start with everyone introducing themselves + the idea they would like to disc
 **Who?**
 
 All you need to show up is curiosity, the best part about ideas meetings is the diversity. We have graphic designers, engineers, chefs, entrepreneurs, VC’s, and developers attend. Have a face? We want to see you there!
+
+We welcome diversity, in terms of gender, ethnicity, and socio-economic status -- everyone is welcome, specifically you.
+
+New to Vancouver? We're a great place to meet likeminded innovative people!
