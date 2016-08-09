@@ -35,4 +35,7 @@ After a discussion around [Soylent](https://www.soylent.com) and that our friend
 
 It made us wonder if we could offer Soylent, which is intended to meet nutritional daily requirements, at an event. It was decided that such a drink might be too controversial, but soup is a regular offering in similar situations. Then we discovered [Soylent Soup](https://diy.soylent.com/recipes/poverty-soup-cooked-soylent) (also known as Poverty Soup) which appears to be under $2/day and very nutritious. 
 
+#### Other References
 
+* [Vancouver Food Waste Documentary ](http://www.foodwastemovie.com/)
+* [Vancouver MeshX Platform](http://meshxchange.com/)
