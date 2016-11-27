@@ -1,0 +1,35 @@
+---
+layout: page
+status: publish
+published: true
+title: Data Driven Wellness  
+author:
+  display_name: cqwww
+  login: cqwww
+  email: kris@onedaywebsite.ca
+  url: ''
+author_login: cqwww
+author_email: kris@onedaywebsite.ca
+date: '2016-04-13 16:38:47 -0700'
+date_gmt: '2016-04-13 20:38:47 -0700'
+categories: []
+tags: []
+comments: []
+---
+<p>The Vancouver Data Driven Wellness Meetup meets on the second Thursday of the month from 7-10pm at <a href="http://creativecoworkers.com/">Creative Coworkers</a>. <a href="https://www.google.ca/maps/place/Creative+Coworkers/@49.2841709,-123.0992541,17.44z/data=!4m2!3m1!1s0x0:0x66a7569c05387d5"> [MAP] </a></p>
+<p>We have a <a href="https://www.meetup.com/DataDrivenWellness/">meetup.com group </a>.</p>
+
+<p> If you're interested in wellness; including nutrition, mindfulness, values, and self-awareness, and want to improve these things for yourself and for the community from a data driven perspective, welcome.</p>
+
+<p>We will be drawing from already-published and scrutinized data/conclusions, and then specifically how a Vancouverite can take action (including through products/services/groups) as well as formulating new hypotheses and tests and doing measurements here in Vancouver. </p>
+
+<p> This is a collaborative group, and the only criticisms invited should be constructive. </p>
+
+<p> When you're at the next meeting, be sure to ask to be added to the members Slack/chat group. </p>
+
+<h4>Minutes:</h4>
+<ul>
+{% for post in site.categories.Wellness %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}	
+</ul>
