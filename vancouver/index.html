@@ -18,13 +18,25 @@ categories: []
 tags: []
 comments: []
 ---
-<p>The Vancouver Chapter meets from 7-10pm on Mondays at <a href="http://creativecoworkers.com/">Creative Coworkers</a>. <a href="https://www.google.ca/maps/place/Creative+Coworkers/@49.2841709,-123.0992541,17.44z/data=!4m2!3m1!1s0x0:0x66a7569c05387d5"> [MAP] </a></p>
+<p>The Vancouver Chapter meets on the first and third Thursday of each month from 7-10pm at <a href="http://creativecoworkers.com/">Creative Coworkers</a>. <a href="https://www.google.ca/maps/place/Creative+Coworkers/@49.2841709,-123.0992541,17.44z/data=!4m2!3m1!1s0x0:0x66a7569c05387d5"> [MAP] </a></p>
 <p>We also have a <a href="http://www.meetup.com/IdeasVancouver/">meetup.com group </a> and a <a href="https://www.facebook.com/ideasvan">Facebook Page</a>.</p>
 <p>You don't have to have an idea to join us. We're a social group who tries to help each other make our ideas happen. You can be any age, ethnicity, and identify as any gender, you just have to be willing to contribute constructively.</p>
 <p> New to Vancouver? We'e a great place to meet fellow creative and innovative folks. Our meetings average 10-15 people, however we've had some meetings be over 30. </p>
 
 <p> When you're at the next meeting, be sure to ask to be added to the members Slack/chat group. </p>
 
+<table style="width:100%">
+ <tr>
+<h4>Minutes:</h4>
+<p>Minutes are taken and published by volunteers at each of the ideas meetings. If you would like to take the minutes for one of the meetings the following <a href="./GitGuideMM.pdf">guide</a> provides a set of basic instructions.</p>
+<ul>
+{% for post in site.categories.Vancouver %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}	
+</ul>
+<p>Before March 16, 2016, <a href="http://archive.ideasmeetings.org/wiki/VancouverChapter">check the wiki</a>.</p>
+</tr>
+  <tr>
 <h4>Projects:</h4>
 <ul>
 {% for post in site.categories.Projects %}
@@ -40,11 +52,5 @@ comments: []
 <li>Founders Coffee (Kris, Luke + 4 others - This project has gone offline and is invite only)</li>
 <li>Dating App/Game/Events (Luke, Kris, Kurtis, Alanna + 3 others)</li>
 </ul>
-<h4>Minutes:</h4>
-<p>Minutes are taken and published by volunteers at each of the ideas meetings. If you would like to take the minutes for one of the meetings the following <a href="./GitGuideMM.pdf">guide</a> provides a set of basic instructions.</p>
-<ul>
-{% for post in site.categories.Vancouver %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}	
-</ul>
-<p>Before March 16, 2016, <a href="http://archive.ideasmeetings.org/wiki/VancouverChapter">check the wiki</a>.</p>
+ </tr>
+</table>
