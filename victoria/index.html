@@ -1,0 +1,61 @@
+---
+layout: page
+status: publish
+published: true
+title: Victoria
+author:
+  display_name: cqwww
+  login: cqwww
+  email: kris@onedaywebsite.ca
+  url: ''
+author_login: cqwww
+author_email: kris@onedaywebsite.ca
+categories: []
+tags: []
+comments: []
+---
+
+<h1>Victoria</h1>
+
+<h2>Information</h2>
+<p>The Ideas meetings in Victoria started in 2007.</p>
+<p><a href="https://www.facebook.com/groups/ideasvic/" target="_blank" rel="noopener noreferrer">Facebook group</a></p>
+
+<h2>Successful projects</h2>
+
+<p>Some of the projects that were conceived at a Victoria Chapter meeting:</p>
+<ul>
+	<li><a href="http://www.ideawave.ca/" target="_blank" rel="noopener noreferrer">IdeaWave</a></li>
+	<li><a href="http://www.makerspace.ca/" target="_blank" rel="noopener noreferrer">MakerSpace</a></li>
+	<li><a href="http://www.awesomeshitclub.com/" target="_blank" rel="noopener noreferrer">Awesome Shit Club</a></li>
+	<li><a href="http://www.savemarylake.com/" target="_blank" rel="noopener noreferrer">Save Mary Lake - Crowd sourcing the purchasing of a park</a></li>
+	<li><a href="http://openwifi.ca/" target="_blank" rel="noopener noreferrer">Victoria Open Wifi Project</a></li>
+</ul>
+
+<p>We also have a <a href="http://archive.ideasmeetings.org/wiki/Projects" target="_blank" rel="noopener noreferrer">list of ongoing projects</a></p>
+
+<h2>Related events in Victoria</h2>
+
+<li><a href="http://www.ideawave.ca/" target="_blank" rel="noopener noreferrer">IdeaWave conference</a></li>
+<li><a href="http://www.awesomeshitclub.com/" target="_blank" rel="noopener noreferrer">Awesome Shit Club</a></li>
+<li><a href="http://www.makerspace.ca/" target="_blank" rel="noopener noreferrer">Makerspace</a></li>
+<li><a href="http://www.opendatabc.ca/" target="_blank" rel="noopener noreferrer">OpenDataBC</a></li>
+<li><a href="http://www.microsec.net/vcc.html" target="_blank" rel="noopener noreferrer">Victoria Communications club</a></li>
+<li><a href="http://barcamp.org/DemoCampVictoria" target="_blank" rel="noopener noreferrer">DemoCampVictoria</a></li>
+<li><a href="http://www.pecha-kucha.org/night/victoria/" target="_blank" rel="noopener noreferrer">PechaKucha Victoria</a></li>
+<li><a href="http://www.tedxvictoria.com/" target="_blank" rel="noopener noreferrer">TEDxVictoria</a></li>
+<li><a href="http://archive.ideasmeetings.org/wiki/Facebook_groups" target="_blank" rel="noopener noreferrer">Facebook groups</a></li>
+
+<h2>Upcoming</h2>
+
+<ul>{% for post in site.categories.Victoria %}
+{% if post.categories contains 'Upcoming' %}
+	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endif %}
+{% endfor %}</ul>
+
+<h2>Minutes</h2>
+
+<ul>{% for post in site.categories.Victoria %}
+	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}</ul>
