@@ -1,7 +1,7 @@
 ---
 layout: post
 status: publish
-published: true
+published: false
 title: "Portsmouth Chapter"
 date: '2012-09-18 00:00:00 -0800'
 author:

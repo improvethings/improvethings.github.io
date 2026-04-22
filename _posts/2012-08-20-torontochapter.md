@@ -1,7 +1,7 @@
 ---
 layout: post
 status: publish
-published: true
+published: false
 title: "Toronto Chapter"
 date: '2012-08-20 00:00:00 -0800'
 author:

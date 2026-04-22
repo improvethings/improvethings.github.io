@@ -1,7 +1,7 @@
 ---
 layout: post
 status: publish
-published: true
+published: false
 title: "Boston Chapter"
 date: '2012-10-12 00:00:00 -0800'
 author:

@@ -1,6 +1,7 @@
 ---
 nav_exclude: true
 layout: page
+permalink: /victoria/
 status: publish
 published: true
 title: Victoria

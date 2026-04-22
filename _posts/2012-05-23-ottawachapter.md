@@ -1,7 +1,7 @@
 ---
 layout: post
 status: publish
-published: true
+published: false
 title: "Ottawa Chapter"
 date: '2012-05-23 00:00:00 -0800'
 author:
