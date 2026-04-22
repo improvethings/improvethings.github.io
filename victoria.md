@@ -13,7 +13,7 @@ author:
 
 <p>We use the <a href="https://www.facebook.com/groups/ideasvic/">Facebook group</a> to announce events.</p>
 
-<h4>Projects born at Victoria meetings:</h4>
+<h4>Projects:</h4>
 <ul>
   <li><a href="http://www.ideawave.ca">IdeaWave</a></li>
   <li><a href="http://www.makerspace.ca">MakerSpace</a></li>
@@ -22,8 +22,17 @@ author:
   <li><a href="http://www.savemarylake.com/">Save Mary Lake</a></li>
 </ul>
 
-<h4>Minutes:</h4>
+<h4>Project notes from meetings:</h4>
+<ul>
+{% for post in site.categories.Projects %}
+  {% assign post_year = post.date | date: '%Y' %}
+  {% if post_year < '2015' %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
 
+<h4>Meeting minutes:</h4>
 <ul>
 {% for post in site.categories.Victoria %}
   <li><a href="{{ post.url }}">{{ post.title }}</a></li>
