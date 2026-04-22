@@ -1,0 +1,19 @@
+---
+layout: page
+status: publish
+published: true
+title: Peterborough
+author:
+  display_name: cqwww
+  email: kris@ideawave.ca
+---
+
+<p>The Peterborough chapter of Ideas Meetings ran from 2012 to 2014. You don't have to have an idea to join — we're a social group who help each other make ideas happen.</p>
+
+<h4>Minutes:</h4>
+
+<ul>
+{% for post in site.categories.Peterborough %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>

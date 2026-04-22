@@ -1,0 +1,19 @@
+---
+layout: page
+status: publish
+published: true
+title: Ottawa
+author:
+  display_name: cqwww
+  email: kris@ideawave.ca
+---
+
+<p>The Ottawa chapter of Ideas Meetings.</p>
+
+<h4>Minutes:</h4>
+
+<ul>
+{% for post in site.categories.Ottawa %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>

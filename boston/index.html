@@ -1,0 +1,19 @@
+---
+layout: page
+status: publish
+published: true
+title: Boston
+author:
+  display_name: cqwww
+  email: kris@ideawave.ca
+---
+
+<p>The Boston chapter of Ideas Meetings ran in 2012.</p>
+
+<h4>Minutes:</h4>
+
+<ul>
+{% for post in site.categories.Boston %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
