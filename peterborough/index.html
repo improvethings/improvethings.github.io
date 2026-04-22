@@ -9,12 +9,26 @@ author:
   email: kris@ideawave.ca
 ---
 
-<p>The Peterborough chapter of Ideas Meetings ran from 2012 to 2014. You don't have to have an idea to join — we're a social group who help each other make ideas happen.</p>
+<style>
+.chapter-layout  { display: flex; gap: 2.5em; align-items: flex-start; }
+.chapter-info    { flex: 0 0 32%; }
+.chapter-minutes { flex: 1; min-width: 0; }
+@media (max-width: 640px) { .chapter-layout { flex-direction: column; } }
+</style>
 
-<h4>Minutes:</h4>
+<div class="chapter-layout">
 
-<ul>
-{% for post in site.categories.Peterborough %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
+  <div class="chapter-info">
+    <p>The Peterborough chapter ran from 2012 to 2014. You don't have to have an idea — we're a social group who help each other make ideas happen.</p>
+  </div>
+
+  <div class="chapter-minutes">
+    <h4>Minutes:</h4>
+    <ul>
+    {% for post in site.categories.Peterborough %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+
+</div>

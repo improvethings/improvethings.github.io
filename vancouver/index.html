@@ -20,38 +20,54 @@ tags: []
 comments: []
 ---
 
-<p>You don't have to have an idea to join us. We're a social group who tries to help each other make our ideas happen. You can be any age, ethnicity, and identify as any gender, you just have to be willing to contribute constructively.</p>
-<p>New to Vancouver? We're a great place to meet fellow creative and innovative folks. Our meetings average 10-15 people, however we've had some meetings be over 30.</p>
+<style>
+.chapter-layout  { display: flex; gap: 2.5em; align-items: flex-start; }
+.chapter-info    { flex: 0 0 32%; }
+.chapter-minutes { flex: 1; min-width: 0; }
+@media (max-width: 640px) { .chapter-layout { flex-direction: column; } }
+details summary { cursor: pointer; color: #555; font-size: 0.9em; margin-top: 0.5em; }
+details ul { margin-top: 0.4em; font-size: 0.9em; }
+</style>
 
-<p>We mostly use the <a href="https://www.facebook.com/ideasvan">Facebook Page</a> and <a href="https://www.meetup.com/VanTechFounders/">Vancouver Founders meetup.com group</a> to announce events.</p>
-<p>When you're at the next meeting, be sure to ask to be added to the members Slack/chat group.</p>
+<div class="chapter-layout">
 
-<h4>Projects:</h4>
-<ul>
-<li><a href="http://awesomeshitclub.com/">Awesome Shit Club</a> (Kris, +10 others)</li>
-<li>Custom Ad Blocker (Kris, Alanna, Nolan)</li>
-<li>Disruptive Art (Paul, Kris)</li>
-<li><a href="/2015/07/08/channel-bonding-project/">Channel Bonding</a> (Clayten, Kiko, Kris)</li>
-<li><a href="/2015/11/09/biofeedback-sensors/">Biofeedback Sensors</a> (Kris, +10 others)</li>
-<li><a href="https://www.krisconstable.com/founders-coffee/">Founders Coffee</a> (Kris, Luke + 4 others — now invite only)</li>
-<li><a href="/vancouver/wellness/">Data Driven Wellness</a> (Kris + others)</li>
-<li>Dating App/Game/Events (Luke, Kris, Kurtis, Alanna + 3 others)</li>
-</ul>
+  <div class="chapter-info">
+    <p>You don't have to have an idea to join us. We're a social group who help each other make ideas happen. Our meetings average 10–15 people.</p>
+    <p>We mostly use the <a href="https://www.facebook.com/ideasvan">Facebook Page</a> and <a href="https://www.meetup.com/VanTechFounders/">Meetup group</a> to announce events. When you're at a meeting, ask to be added to the Slack group.</p>
 
-<h4>Project notes from meetings:</h4>
-<ul>
-{% for post in site.categories.Projects %}
-  {% assign post_year = post.date | date: '%Y' %}
-  {% unless post_year < '2015' %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endunless %}
-{% endfor %}
-</ul>
+    <h4>Projects:</h4>
+    <ul>
+      <li><a href="http://awesomeshitclub.com/">Awesome Shit Club</a></li>
+      <li>Custom Ad Blocker</li>
+      <li>Disruptive Art</li>
+      <li><a href="/2015/07/08/channel-bonding-project/">Channel Bonding</a></li>
+      <li><a href="/2015/11/09/biofeedback-sensors/">Biofeedback Sensors</a></li>
+      <li><a href="https://www.krisconstable.com/founders-coffee/">Founders Coffee</a></li>
+      <li><a href="/vancouver/wellness/">Data Driven Wellness</a></li>
+      <li>Dating App/Game/Events</li>
+    </ul>
 
-<h4>Minutes:</h4>
-<p>Minutes are taken and published by volunteers. If you'd like to take minutes, the following <a href="./GitGuideMM.pdf">guide</a> has basic instructions.</p>
-<ul>
-{% for post in site.categories.Vancouver %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
+    <details>
+      <summary>Project notes from meetings</summary>
+      <ul>
+      {% for post in site.categories.Projects %}
+        {% assign post_year = post.date | date: '%Y' %}
+        {% unless post_year < '2015' %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endunless %}
+      {% endfor %}
+      </ul>
+    </details>
+  </div>
+
+  <div class="chapter-minutes">
+    <h4>Minutes:</h4>
+    <p style="font-size:0.85em; color:#666;">If you'd like to take minutes, see the <a href="./GitGuideMM.pdf">guide</a>.</p>
+    <ul>
+    {% for post in site.categories.Vancouver %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+
+</div>
