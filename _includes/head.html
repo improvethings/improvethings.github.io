@@ -9,4 +9,18 @@
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+  <!-- PostHog Snippet -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,(0))))}}(p="posthog"),((r="ph_request_completed"),g(e,p),g(e,r),e._i.push([i,s,a]),e.__SV=1,o=t.createElement("script"),o.type="text/javascript",o.async=!0,o.src=s.api_host+"/static/array.js",n=t.getElementsByTagName("script")[0],n.parentNode.insertBefore(o,n))}(document,window.posthog||[]);
+    posthog.init('phc_OFTq4aRvvH1wDSKqHmDfqTBN8fbq3z99BKzUQbltkqB', {
+      api_host: 'https://logs.petrichorlabs.ca/',
+      autocapture: true,
+      capture_pageview: true,
+      loaded: function(posthog) {
+        posthog.identify('improvethings_user', { project_id: 19 });
+      }
+    })
+  </script>
+  <!-- End PostHog Snippet -->
 </head>
