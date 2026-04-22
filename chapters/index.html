@@ -1,0 +1,39 @@
+---
+layout: page
+title: Chapters
+---
+
+<p>Ideas Meetings has run in cities across North America since 2007. Click a city to browse its meeting minutes.</p>
+
+<table style="width:100%; border-collapse:collapse; margin-top:1em;">
+  <tbody>
+
+  {% assign cats = "Vancouver,Victoria,playa,Peterborough,Boston,Ottawa,Seattle,Portsmouth,Toronto" | split: "," %}
+  {% for cat in cats %}
+    {% assign posts = site.categories[cat] | sort: "date" %}
+    {% if posts.size > 0 %}
+      {% assign first_year = posts.first.date | date: "%Y" %}
+      {% assign last_year  = posts.last.date  | date: "%Y" %}
+      {% if last_year == "2025" or last_year == "2024" %}
+        {% assign year_range = first_year | append: "–present" %}
+      {% elsif first_year == last_year %}
+        {% assign year_range = first_year %}
+      {% else %}
+        {% assign year_range = first_year | append: "–" | append: last_year %}
+      {% endif %}
+    <tr>
+      <td style="padding:0.4em 1em 0.4em 0; font-size:1.1em;">
+        <a href="/{{ cat | downcase }}/">{{ cat | capitalize }}</a>
+      </td>
+      <td style="padding:0.4em 0.5em; color:#666; white-space:nowrap;">
+        {{ year_range }}
+      </td>
+      <td style="padding:0.4em 0; color:#999; font-size:0.9em;">
+        {{ posts.size }} meeting{% if posts.size != 1 %}s{% endif %}
+      </td>
+    </tr>
+    {% endif %}
+  {% endfor %}
+
+  </tbody>
+</table>
